@@ -1,0 +1,27 @@
+apiVersion: sparkoperator.k8s.io/v1beta2
+kind: SparkApplication
+metadata:
+  name: spark-quickstart
+  namespace: default
+spec:
+  type: Scala
+  mode: cluster
+  image: bitnami/spark:3.5.5
+  imagePullPolicy: IfNotPresent
+  mainClass: UserTest
+  mainApplicationFile: "http://minio.minio-dev.svc.cluster.local:9090/my-app-bucket/app.jar"
+  sparkVersion: 3.5.3
+  driver:
+    labels:
+      version: 3.5.3
+    cores: 1
+    memory: 512m
+    serviceAccount: spark-operator-spark
+    annotations:
+      "debug-spark-classpath": "true"
+  executor:
+    labels:
+      version: 3.5.3
+    instances: 1
+    cores: 1
+    memory: 512m

@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec({file:/home/noe/code/scala/FirstProject/}root/assembly, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: assembly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mAssembly jar up to date: /home/noe/code/scala/FirstProject/target/scala-2.12/app.jar[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed Mar 26, 2025, 1:01:34 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m
